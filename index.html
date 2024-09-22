@@ -3,9 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>My-Fifth-Assignment</title>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+<!-- Tailwind and DaisyUI CDN -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Tailwind Config -->
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary:'rgb(180,244,97)',
+          secondary: 'rgb(87,86,85)',
+          body: 'rgb(171,239,95)',
+          accent:'rgba(171, 239, 95, 0.5)',
+          body_neutral: 'rgb(51, 51, 51)',
+        },
+        fontFamily: {
+          Manrope: 'Lexend',
+        },  
+      }
+    }
+  }
+</script>
+
 </head>
 <body>
-  
+
+  <!-- Navbar start -->
+    <div class="navbar pb-10 pt-6 bg-[#f9f7f3]">
+      <div class="navbar-start ml-4 lg:ml-28">
+          <button class="font-semibold text-xl text-black py-3 px-8 rounded-lg bg-primary ">Blog</button>
+        </div>
+        <div class="navbar-center hidden md:!block lg:!block">
+          <div class="flex items-center">
+            <img class="h-10 w-10" src="images/logo.png" alt="">
+            <p class="text-xl font-semibold  ml-4">Donate Bangladesh</p>
+          </div>
+        </div>
+        <div class="navbar-end mr-4 lg:mr-28">
+          <img src="images/coin.png" alt="">
+            <p class="text-xl font-medium text-[#575655] mx-2">5500</p>
+            <p class="text-xl font-medium text-[#575655]">BDT</p>
+      </div>
+    </div>
+     <!-- Navbar End-->
+      
 </body>
 </html>
