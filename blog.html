@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog Page</title>
+
+  <!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+<!-- Tailwind and DaisyUI CDN -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Tailwind Config -->
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary:'rgb(180,244,97)',
+          secondary: 'rgb(87,86,85)',
+          body: 'rgb(171,239,95)',
+          accent:'rgba(171, 239, 95, 0.5)',
+          body_neutral: 'rgb(51, 51, 51)',
+        },
+        fontFamily: {
+          Manrope: 'Lexend',
+        },  
+      }
+    }
+  }
+</script>
+
+</head>
+<body>
+  <header class="sticky top-0 z-50">
+  
+    <!-- Navbar start -->
+    <div class="navbar pb-10 pt-6 bg-[#f9f7f3]">
+      <div class="navbar-start ml-4 lg:ml-28">
+          <button class="font-semibold text-xl text-black py-3 px-8 rounded-lg bg-primary ">Home</button>
+        </div>
+        <div class="navbar-center hidden md:!block lg:!block">
+          <div class="flex items-center">
+            <img class="h-10 w-10" src="images/logo.png" alt="">
+            <p class="text-xl font-semibold  ml-4">Donate Bangladesh</p>
+          </div>
+        </div>
+        <div class="navbar-end mr-4 lg:mr-28">
+          <img src="images/coin.png" alt="">
+            <p class="text-xl font-medium text-[#575655] mx-2">5500</p>
+            <p class="text-xl font-medium text-[#575655]">BDT</p>
+      </div>
+    </div>
+     <!-- Navbar End-->
+  </header>
+  <main class="mx-5 md:mx-16 lg:mx-28">
+    <h1 class="font-bold text-3xl py-8 mt-3">Important FAQ</h1>
+    <div class="join join-vertical w-full">
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
+        <div class="collapse-content">
+          <p>
+            The Document Object Model (DOM) is a programming interface for web documents. It represents the page structure as a tree, allowing scripts to manipulate HTML or XML elements dynamically.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+        <div class="collapse-content">
+          <p>You can select DOM elements using methods like getElementById() for ID-based selection, getElementsByClassName() or getElementsByTagName() for class or tag names, and querySelector() or querySelectorAll() for selecting elements using CSS selectors.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+        <div class="collapse-content">
+          <p>
+            Event delegation is a technique where a single parent element handles events for its child elements using event bubbling. It's useful because it improves performance, reduces memory usage, and simplifies code, especially when managing dynamic or numerous elements.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+        <div class="collapse-content">
+          <p>
+            To manipulate an element's attributes and styles using the DOM, you can use the setAttribute() method to change attributes, such as src or href. For styles, use the style property, setting individual CSS properties directly, like element.style.color = 'red' to change text color.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
