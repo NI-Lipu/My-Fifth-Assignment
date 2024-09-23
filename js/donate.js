@@ -102,6 +102,8 @@ document.getElementById('quota-movement-donation-btn')
           document.getElementById('btn-donation').classList.add('font-medium', 'border-2', 'bg-[#f3f3f3]', 'border-gray-200', 'text-[#575655]');
 
           document.getElementById('main-section').classList.add('hidden');
+
+          document.getElementById('history-container').classList.remove('hidden')
         })
     document.getElementById('btn-donation')
         .addEventListener('click', function(){
@@ -109,6 +111,8 @@ document.getElementById('quota-movement-donation-btn')
           document.getElementById('btn-donation').classList.add('font-semibold', 'bg-primary', 'text-black');
 
           document.getElementById('main-section').classList.remove('hidden');
+
+          document.getElementById('history-container').classList.add('hidden')
         })
 
         // Go to Blog Page
