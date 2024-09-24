@@ -18,10 +18,16 @@ document.getElementById('noakhali-donation-btn')
       const myNewBalance = myBalance - donation;
       document.getElementById('my-balance').innerText = myNewBalance;
 
+      // Modal
+
+      const modal = document.getElementById('modal-noakhali')
+      modal.showModal();
+
+
       const historyItem = document.createElement('div');
       historyItem.className = 'p-8 mb-8 mx-4 lg:mx-28 rounded-lg border-2 border-gray-300';
       historyItem.innerHTML = `
-          <p class='font-bold text-xl text-black'>${donation} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+          <p class='font-bold text-xl text-black'>${donation} Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
           <p class='font-light text-gray-600 mt-3'>Date : ${new Date().toString()}</p>
       `
       const historyContainer = document.getElementById('history-container');
@@ -48,6 +54,11 @@ document.getElementById('feni-donation-btn')
       const myNewBalance = myBalance - donation;
       document.getElementById('my-balance').innerText = myNewBalance;
 
+
+       // Modal
+
+      const modal = document.getElementById('modal-feni')
+      modal.showModal();     
 
       const historyItem = document.createElement('div');
       historyItem.className = 'p-8 mb-8 mx-4 lg:mx-28 rounded-lg border-2 border-gray-300';
@@ -79,6 +90,11 @@ document.getElementById('quota-movement-donation-btn')
 
       const myNewBalance = myBalance - donation;
       document.getElementById('my-balance').innerText = myNewBalance;
+
+      // Modal
+
+      const modal = document.getElementById('modal-quota-movement')
+      modal.showModal();
 
       const historyItem = document.createElement('div');
       historyItem.className = 'p-8 mb-8 mx-4 lg:mx-28 rounded-lg border-2 border-gray-300';
