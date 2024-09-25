@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,14 +66,23 @@
         <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
         <div class="collapse-content">
           <p>
-            The Document Object Model (DOM) is a programming interface for web documents. It represents the page structure as a tree, allowing scripts to manipulate HTML or XML elements dynamically.</p>
+            The full meaning of DOM is Document Object Model.We can access and modify any kind of HTML structure and CSS style by using Javascript DOM.
+          </p>
         </div>
       </div>
       <div class="collapse collapse-arrow join-item border-base-300 border">
         <input type="radio" name="my-accordion-4" />
         <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
         <div class="collapse-content">
-          <p>You can select DOM elements using methods like getElementById() for ID-based selection, getElementsByClassName() or getElementsByTagName() for class or tag names, and querySelector() or querySelectorAll() for selecting elements using CSS selectors.</p>
+          <p>
+            There are several way to select an element from the DOM. <br>
+            They are-- <br>
+            # getElementsByTagName() <br>
+            # getElementsByClassName() <br>
+            # getElementById() <br>
+            # querySelector() <br>
+            # querySelectorAll()
+          </p>
         </div>
       </div>
       <div class="collapse collapse-arrow join-item border-base-300 border">
@@ -81,7 +90,8 @@
         <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
         <div class="collapse-content">
           <p>
-            Event delegation is a technique where a single parent element handles events for its child elements using event bubbling. It's useful because it improves performance, reduces memory usage, and simplifies code, especially when managing dynamic or numerous elements.</p>
+            By event delegation we can handles all child elements by a single parent element. It's useful because it improves performance, reduces memory usages and simplifies the code.
+          </p>  
         </div>
       </div>
       <div class="collapse collapse-arrow join-item border-base-300 border">
@@ -89,7 +99,16 @@
         <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
         <div class="collapse-content">
           <p>
-            To manipulate an element's attributes and styles using the DOM, you can use the setAttribute() method to change attributes, such as src or href. For styles, use the style property, setting individual CSS properties directly, like element.style.color = 'red' to change text color.</p>
+            We can manipulate an element's attributes and styles using the DOM. <br>
+            To manipulate attributes we can use -- <br>
+            # getAttribute() <br>
+            # setAttribute() <br>
+            # removeAttribute() <br> <br>
+            To manipulate styles we can use -- <br>
+            classList.add() <br>
+            classList.remove() <br>
+            classList.toggle() <br>
+            classList.contains() <br>
         </div>
       </div>
     </div>
