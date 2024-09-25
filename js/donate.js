@@ -9,7 +9,7 @@ document.getElementById('noakhali-donation-btn')
       const inputField = document.getElementById('input-noakhali-donation').value;
       // const inputField = getInputFieldValueById('input-noakhali-donation');
 
-      if(inputField == '' ||donation < 0 || myBalance < donation){
+      if(inputField == '' ||donation <= 0 || myBalance < donation){
         alert('Failed to add money.')
         return;
       }
@@ -46,7 +46,7 @@ document.getElementById('feni-donation-btn')
       const myBalance = getTextFieldValueById('my-balance');
       const inputField = document.getElementById('input-feni-donation').value;
 
-      if(inputField == '' || donation < 0 || myBalance < donation){
+      if(inputField == '' || donation <= 0 || myBalance < donation){
         alert('Failed to add money.')
         return;
       }
@@ -84,7 +84,7 @@ document.getElementById('quota-movement-donation-btn')
       const myBalance = getTextFieldValueById('my-balance');
       const inputField = document.getElementById('input-quota-movement-donation').value;
 
-      if(inputField == '' || donation < 0 || myBalance < donation){
+      if(inputField == '' || donation <= 0 || myBalance < donation){
         alert('Failed to add money.')
         return;
       }
